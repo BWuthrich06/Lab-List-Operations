@@ -22,23 +22,23 @@ class ListSlicingTests(unittest.TestCase):
         self.assertEqual(result2, 'Dec')
     
 
-    # def test_top(self):
-    #     result = list_operations.top(['Jan', 'Feb', 'Mar'])
-    #     self.assertEqual(result, ['Jan', 'Feb'])
-    #     result2 = list_operations.top(['Sep', 'Oct', 'Nov', 'Dec'])
-    #     self.assertEqual(result2, ['Sep', 'Oct', 'Nov'])
+    def test_top(self):
+        result = list_operations.top(['Jan', 'Feb', 'Mar'])
+        self.assertEqual(result, ['Jan', 'Feb'])
+        result2 = list_operations.top(['Sep', 'Oct', 'Nov', 'Dec'])
+        self.assertEqual(result2, ['Sep', 'Oct', 'Nov'])
     
 
-    # def test_first_three(self):
-    #     result = list_operations.first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
-    #     self.assertEqual(result, ['Jan', 'Feb', 'Mar'])
+    def test_first_three(self):
+        result = list_operations.first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
+        self.assertEqual(result, ['Jan', 'Feb', 'Mar'])
     
 
-    # def test_last_five(self):
-    #     result = list_operations.last_five([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-    #     self.assertEqual(result, [15, 18, 21, 24, 27])
-    #     result2 = list_operations.last_five([0, 3, 6, 9, 12, 15, 18])
-    #     self.assertEqual(result2, [6, 9, 12, 15, 18])
+    def test_last_five(self):
+        result = list_operations.last_five([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+        self.assertEqual(result, [15, 18, 21, 24, 27])
+        result2 = list_operations.last_five([0, 3, 6, 9, 12, 15, 18])
+        self.assertEqual(result2, [6, 9, 12, 15, 18])
 
 
     # def test_middle(self):
