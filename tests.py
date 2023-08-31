@@ -41,21 +41,21 @@ class ListSlicingTests(unittest.TestCase):
         self.assertEqual(result2, [6, 9, 12, 15, 18])
 
 
-    # def test_middle(self):
-    #     result = list_operations.middle([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-    #     self.assertEqual(result, [6, 9, 12, 15, 18, 21])
+    def test_middle(self):
+        result = list_operations.middle([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+        self.assertEqual(result, [6, 9, 12, 15, 18, 21])
 
 
-    # def test_inner_four(self):
-    #     result = list_operations.inner_four([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-    #     self.assertEqual(result, [6, 9, 12, 15])
+    def test_inner_four(self):
+        result = list_operations.inner_four([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+        self.assertEqual(result, [6, 9, 12, 15])
     
 
-    # def test_inner_four_end(self):
-    #     result = list_operations.inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-    #     self.assertEqual(result, [12, 15, 18, 21])
-    #     result2 = list_operations.inner_four_end([0, 3, 6, 9, 12, 15, 18])
-    #     self.assertEqual(result2, [3, 6, 9, 12])
+    def test_inner_four_end(self):
+        result = list_operations.inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+        self.assertEqual(result, [12, 15, 18, 21])
+        result2 = list_operations.inner_four_end([0, 3, 6, 9, 12, 15, 18])
+        self.assertEqual(result2, [3, 6, 9, 12])
     
 
     # def test_replace_head(self):
