@@ -137,8 +137,9 @@ def replace_head(input_list):
     [42, 3, 6, 9, 12, 15, 18, 21, 24, 27]
 
     """
-
-    pass
+    input_list[0] = 42
+    print(input_list)
+    
 
 
 def replace_third_and_last(input_list):
@@ -154,8 +155,9 @@ def replace_third_and_last(input_list):
     [0, 3, 37, 9, 12, 15, 18, 21, 24, 37]
 
     """
-
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
+    print(input_list)
 
 
 def backwards(input_list):
@@ -169,8 +171,8 @@ def backwards(input_list):
     ['May', 'Apr', 'Mar', 'Feb', 'Jan']
 
     """
-
-    pass
+    return input_list[::-1]
+    
 
 
 def every_other(input_list):

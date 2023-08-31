@@ -58,21 +58,21 @@ class ListSlicingTests(unittest.TestCase):
         self.assertEqual(result2, [3, 6, 9, 12])
     
 
-    # def test_replace_head(self):
-    #     multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-    #     list_operations.replace_head(multiples)
-    #     self.assertEqual(multiples, [42, 3, 6, 9, 12, 15, 18, 21, 24, 27])
+    def test_replace_head(self):
+        multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+        list_operations.replace_head(multiples)
+        self.assertEqual(multiples, [42, 3, 6, 9, 12, 15, 18, 21, 24, 27])
     
 
-    # def test_replace_third_and_last(self):
-    #     multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-    #     list_operations.replace_third_and_last(multiples)
-    #     self.assertEqual(multiples, [0, 3, 37, 9, 12, 15, 18, 21, 24, 37])
+    def test_replace_third_and_last(self):
+        multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+        list_operations.replace_third_and_last(multiples)
+        self.assertEqual(multiples, [0, 3, 37, 9, 12, 15, 18, 21, 24, 37])
     
 
-    # def test_backwards(self):
-    #     result = list_operations.backwards(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
-    #     self.assertEqual(result, ['May', 'Apr', 'Mar', 'Feb', 'Jan'])
+    def test_backwards(self):
+        result = list_operations.backwards(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
+        self.assertEqual(result, ['May', 'Apr', 'Mar', 'Feb', 'Jan'])
 
 
     # def test_every_other(self):
