@@ -75,20 +75,20 @@ class ListSlicingTests(unittest.TestCase):
         self.assertEqual(result, ['May', 'Apr', 'Mar', 'Feb', 'Jan'])
 
 
-    # def test_every_other(self):
-    #     result = list_operations.every_other(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'])
-    #     self.assertEqual(result, ['Jan', 'Mar', 'May'])
+    def test_every_other(self):
+        result = list_operations.every_other(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'])
+        self.assertEqual(result, ['Jan', 'Mar', 'May'])
     
 
-    # def test_delete_third_and_seventh(self):
-    #     notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
-    #     list_operations.delete_third_and_seventh(notes)
-    #     self.assertEqual(notes, ['Do', 'Re', 'Fa', 'So', 'La', 'Do'])
+    def test_delete_third_and_seventh(self):
+        notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+        list_operations.delete_third_and_seventh(notes)
+        self.assertEqual(notes, ['Do', 'Re', 'Fa', 'So', 'La', 'Do'])
     
 
-    # def test_indices_of_positive_numbers(self):
-    #     result = list_operations.indices_of_positive_numbers([1, -2, 3, 5, -8, -13, 21])
-    #     self.assertEqual(result, [0, 2, 3, 6])
+    def test_indices_of_positive_numbers(self):
+        result = list_operations.indices_of_positive_numbers([1, -2, 3, 5, -8, -13, 21])
+        self.assertEqual(result, [0, 2, 3, 6])
     
 
     # def test_sum_repeats(self):

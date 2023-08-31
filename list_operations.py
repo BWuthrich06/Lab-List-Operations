@@ -184,8 +184,8 @@ def every_other(input_list):
     ['Jan', 'Mar', 'May']
 
     """
+    return input_list[::2]
 
-    pass
 
 
 def delete_third_and_seventh(input_list):
@@ -201,8 +201,11 @@ def delete_third_and_seventh(input_list):
     ['Do', 'Re', 'Fa', 'So', 'La', 'Do']
 
     """
+    input_list[2:3] = []
+    input_list[5:6] = []
+    
+    print(input_list)
 
-    pass
 
 
 ### List Iteration Problems. Built-in methods are allowed for these! ###
@@ -216,8 +219,12 @@ def indices_of_positive_numbers(input_list):
     [0, 2, 3, 6]
 
     """
-
-    pass
+    new_list =[]
+    for idx, num in enumerate(input_list):
+        if num > 0:
+            new_list.append(idx)
+    return new_list
+        
 
 
 def sum_repeats(input_list):
