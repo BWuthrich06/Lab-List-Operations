@@ -239,5 +239,16 @@ def sum_repeats(input_list):
     7
 
     """
+    same_nums = 0
+    current_num = 0
 
-    pass
+    for num in input_list:
+        if num == current_num:
+            same_nums += num
+            current_num = num
+        else:
+            current_num = num
+
+    return same_nums
+
+    

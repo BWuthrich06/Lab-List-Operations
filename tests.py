@@ -91,9 +91,9 @@ class ListSlicingTests(unittest.TestCase):
         self.assertEqual(result, [0, 2, 3, 6])
     
 
-    # def test_sum_repeats(self):
-    #     result = list_operations.sum_repeats([1, 1, 5, 1, 2, 6, 6])
-    #     self.assertEqual(result, 7)
+    def test_sum_repeats(self):
+        result = list_operations.sum_repeats([1, 1, 5, 1, 2, 6, 6])
+        self.assertEqual(result, 7)
 
 
 if __name__ == "__main__":
